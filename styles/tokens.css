@@ -1,0 +1,328 @@
+/* Milaan — color system.
+   One ink family (plum-cast near-black through warm paper) plus four
+   equal-weight signal hues that share lightness (0.55) and chroma (0.115),
+   so no signal ever shouts louder than another. */
+
+:root {
+  /* ── Ink ramp: the whole neutral scale. Plum cast at the dark end,
+        warming to paper at the light end. ── */
+  --ink-950: oklch(0.155 0.022 318);
+  --ink-900: oklch(0.220 0.020 318);
+  --ink-800: oklch(0.300 0.018 318);
+  --ink-700: oklch(0.400 0.015 316);
+  --ink-600: oklch(0.500 0.013 314);
+  --ink-500: oklch(0.600 0.011 312);
+  --ink-400: oklch(0.700 0.009 306);
+  --ink-300: oklch(0.800 0.008 300);
+  --ink-200: oklch(0.880 0.007 95);
+  --ink-100: oklch(0.938 0.007 90);
+  --ink-050: oklch(0.966 0.008 88);
+  --paper:   oklch(0.985 0.006 85);
+  --paper-pure: oklch(0.995 0.003 85);
+
+  /* ── Signal hues. Same L + C, hue only. ── */
+  --signal-match:  oklch(0.550 0.115 152); /* reconciled, balanced, green */
+  --signal-review: oklch(0.550 0.115 70);  /* needs a human, amber */
+  --signal-break:  oklch(0.550 0.115 32);  /* does not add up, vermilion */
+  --signal-info:   oklch(0.550 0.115 235); /* neutral system note, teal-blue */
+  --brand-plum:    oklch(0.550 0.115 320); /* Milaan mark + accent */
+
+  /* Tints — 0.955 L, 0.030 C at the same hues. For row fills and pills. */
+  --tint-match:  oklch(0.955 0.030 152);
+  --tint-review: oklch(0.955 0.030 70);
+  --tint-break:  oklch(0.955 0.030 32);
+  --tint-info:   oklch(0.955 0.030 235);
+  --tint-plum:   oklch(0.955 0.030 320);
+
+  /* Edges — the signal at rule strength. */
+  --edge-match:  oklch(0.860 0.055 152);
+  --edge-review: oklch(0.860 0.055 70);
+  --edge-break:  oklch(0.860 0.055 32);
+  --edge-info:   oklch(0.860 0.055 235);
+
+  /* ── Semantic aliases. Compose with these, not the ramp. ── */
+  --text-primary:   var(--ink-950);
+  --text-secondary: var(--ink-700);
+  --text-tertiary:  var(--ink-500);
+  --text-disabled:  var(--ink-400);
+  --text-inverse:   var(--paper);
+  --text-link:      var(--ink-950);
+  --text-link-hover: var(--brand-plum);
+
+  --surface-page:    var(--ink-050);
+  --surface-card:    var(--paper-pure);
+  --surface-sunken:  var(--ink-100);
+  --surface-raised:  var(--paper-pure);
+  --surface-inverse: var(--ink-950);
+  --surface-hover:   oklch(0.955 0.008 88);
+  --surface-active:  var(--ink-100);
+  --surface-selected: var(--tint-plum);
+
+  --border-hairline: oklch(0.895 0.006 92); /* 1px rules, table lines */
+  --border-default:  var(--ink-200);
+  --border-strong:   var(--ink-300);
+  --border-inverse:  var(--ink-800);
+  --border-focus:    var(--brand-plum);
+
+  --action-primary-bg:       var(--ink-950);
+  --action-primary-bg-hover: var(--ink-800);
+  --action-primary-fg:       var(--paper);
+  --action-secondary-bg:     var(--paper-pure);
+  --action-secondary-fg:     var(--ink-950);
+  --action-danger-bg:        var(--signal-break);
+  --action-danger-fg:        var(--paper);
+
+  --focus-ring: 0 0 0 3px oklch(0.550 0.115 320 / 0.22);
+
+  /* Data-viz sequence: signal hues first, then a plum/teal extension.
+     Never more than five series on one chart. */
+  --viz-1: var(--signal-info);
+  --viz-2: var(--signal-match);
+  --viz-3: var(--signal-review);
+  --viz-4: var(--signal-break);
+  --viz-5: var(--brand-plum);
+}
+
+/* Inverse scope — footers, the app's command bar, dark hero panels.
+   Flip the ramp's meaning rather than redefining components. */
+[data-theme="ink"] {
+  --text-primary:   var(--paper);
+  --text-secondary: var(--ink-300);
+  --text-tertiary:  var(--ink-400);
+  --surface-page:   var(--ink-950);
+  --surface-card:   var(--ink-900);
+  --surface-sunken: var(--ink-950);
+  --surface-hover:  var(--ink-800);
+  --border-hairline: var(--ink-800);
+  --border-default:  var(--ink-800);
+  --border-strong:   var(--ink-700);
+  --action-primary-bg: var(--paper);
+  --action-primary-bg-hover: var(--ink-100);
+  --action-primary-fg: var(--ink-950);
+  --action-secondary-bg: transparent;
+  --action-secondary-fg: var(--paper);
+  --text-link: var(--paper);
+  --text-link-hover: var(--ink-300);
+}
+
+/* Milaan — typography.
+   Three faces, each with one job:
+     Instrument Serif — display only. Headlines, big numbers in marketing.
+     IBM Plex Sans    — all interface and body text.
+     IBM Plex Mono    — every figure, id, code, timestamp, and table column.
+   The mono is not decoration: money and identifiers must align vertically,
+   so anything a reader might compare down a column is set in mono. */
+
+
+
+:root {
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-sans: "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Scale — 1.25 at the top, tightening to 1.125 in UI sizes. */
+  --text-display-xl: 76px;
+  --text-display-lg: 56px;
+  --text-display-md: 40px;
+  --text-display-sm: 30px;
+  --text-title:      22px;
+  --text-subtitle:   17px;
+  --text-body:       15px;
+  --text-body-sm:    13.5px;
+  --text-caption:    12px;
+  --text-micro:      10.5px;
+
+  --leading-display: 1.02;
+  --leading-title:   1.22;
+  --leading-body:    1.55;
+  --leading-tight:   1.3;
+
+  /* Display sizes get negative tracking; small caps-y labels get positive. */
+  --tracking-display: -0.022em;
+  --tracking-title:   -0.012em;
+  --tracking-body:    0em;
+  --tracking-label:   0.08em;
+  --tracking-micro:   0.13em;
+
+  --weight-regular: 400;
+  --weight-text:    450;
+  --weight-medium:  500;
+  --weight-semibold: 600;
+
+  /* Composed roles */
+  --type-display-xl: var(--weight-regular) var(--text-display-xl)/var(--leading-display) var(--font-display);
+  --type-display-lg: var(--weight-regular) var(--text-display-lg)/var(--leading-display) var(--font-display);
+  --type-display-md: var(--weight-regular) var(--text-display-md)/1.1 var(--font-display);
+  --type-title:      var(--weight-medium) var(--text-title)/var(--leading-title) var(--font-sans);
+  --type-subtitle:   var(--weight-medium) var(--text-subtitle)/var(--leading-tight) var(--font-sans);
+  --type-body:       var(--weight-regular) var(--text-body)/var(--leading-body) var(--font-sans);
+  --type-body-strong: var(--weight-medium) var(--text-body)/var(--leading-body) var(--font-sans);
+  --type-caption:    var(--weight-regular) var(--text-caption)/1.4 var(--font-sans);
+  --type-mono:       var(--weight-regular) var(--text-body-sm)/1.45 var(--font-mono);
+  --type-mono-sm:    var(--weight-regular) var(--text-caption)/1.4 var(--font-mono);
+  --type-figure:     var(--weight-medium) var(--text-title)/1.1 var(--font-mono);
+
+  /* Eyebrow / column-header label: mono, uppercase, wide. Used everywhere
+     a small piece of chrome needs to name a region. */
+  --type-label: var(--weight-medium) var(--text-micro)/1.2 var(--font-mono);
+}
+
+/* Numerals are always tabular + lining wherever they can be compared. */
+.mono, [data-numeric] {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "zero" 1; /* slashed zero — ledger legibility */
+}
+
+/* Milaan — spacing, sizing, radii.
+   4px base. Dense by default: this is a tool people read tables in all day. */
+
+:root {
+  --space-0: 0;
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 12px;
+  --space-6: 16px;
+  --space-7: 20px;
+  --space-8: 24px;
+  --space-9: 32px;
+  --space-10: 40px;
+  --space-11: 56px;
+  --space-12: 72px;
+  --space-13: 96px;
+  --space-14: 128px;
+
+  /* Radii — small and consistent. Nothing in Milaan is pill-shaped except
+     status pills; the product's geometry is rectangular like a ledger. */
+  --radius-none: 0;
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+
+  /* Control heights */
+  --control-sm: 26px;
+  --control-md: 32px;
+  --control-lg: 40px;
+
+  /* Table rhythm */
+  --row-height: 38px;
+  --row-height-dense: 30px;
+
+  /* Layout */
+  --sidebar-w: 232px;
+  --inspector-w: 380px;
+  --topbar-h: 52px;
+  --content-max: 1240px;
+  --prose-max: 62ch;
+  --gutter: var(--space-8);
+}
+
+/* Milaan — elevation, borders, motion.
+   Shadows are almost absent. Depth comes from hairline rules and a single
+   warm-tinted shadow reserved for things that genuinely float (menus,
+   dialogs, drag ghosts). A card sitting on the page gets a border, not a
+   shadow. */
+
+:root {
+  --shadow-none: none;
+  --shadow-hairline: 0 0 0 1px var(--border-hairline);
+  --shadow-raised: 0 1px 2px oklch(0.155 0.022 318 / 0.05);
+  --shadow-popover:
+    0 1px 1px oklch(0.155 0.022 318 / 0.04),
+    0 8px 24px -6px oklch(0.155 0.022 318 / 0.14);
+  --shadow-dialog:
+    0 1px 1px oklch(0.155 0.022 318 / 0.05),
+    0 24px 60px -12px oklch(0.155 0.022 318 / 0.22);
+  --shadow-inset-top: inset 0 1px 0 oklch(0.995 0.003 85 / 0.12);
+
+  --border-width: 1px;
+  --border-width-strong: 1.5px;
+
+  /* Motion — short, flat, no bounce. Nothing about auditing should spring.
+     The one exception is the match-confirm tick, which uses --ease-out-back. */
+  --dur-instant: 80ms;
+  --dur-fast: 140ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+  --dur-deliberate: 520ms;
+
+  --ease-standard: cubic-bezier(0.32, 0.08, 0.24, 1);
+  --ease-out: cubic-bezier(0.16, 0.8, 0.28, 1);
+  --ease-in: cubic-bezier(0.5, 0, 1, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.42, 0.64, 1);
+
+  --transition-control: background-color var(--dur-fast) var(--ease-standard),
+    border-color var(--dur-fast) var(--ease-standard),
+    color var(--dur-fast) var(--ease-standard),
+    box-shadow var(--dur-fast) var(--ease-standard);
+
+  /* Signature texture: the ledger rule. A 1px hairline repeating at row
+     height, used as a background on empty states and hero panels so blank
+     space still reads as ruled paper. */
+  --texture-ruled: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(var(--row-height) - 1px),
+    var(--border-hairline) calc(var(--row-height) - 1px),
+    var(--border-hairline) var(--row-height)
+  );
+  --texture-dotgrid: radial-gradient(
+    var(--ink-200) 1px, transparent 1px
+  );
+  --texture-dotgrid-size: 12px 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-instant: 0ms; --dur-fast: 0ms; --dur-base: 0ms;
+    --dur-slow: 0ms; --dur-deliberate: 0ms;
+  }
+}
+
+/* Milaan — base element resets. Kept minimal; components style themselves. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font: var(--type-body);
+  letter-spacing: var(--tracking-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--weight-medium); }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; }
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+  text-decoration-color: var(--ink-300);
+  text-underline-offset: 3px;
+  transition: color var(--dur-fast) var(--ease-standard);
+}
+a:hover { color: var(--text-link-hover); text-decoration: underline; }
+a:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-xs); }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+
+table { border-collapse: collapse; width: 100%; }
+th { text-align: left; font-weight: var(--weight-medium); }
+
+::selection { background: var(--tint-plum); color: var(--ink-950); }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-hairline);
+  margin: var(--space-8) 0;
+}
