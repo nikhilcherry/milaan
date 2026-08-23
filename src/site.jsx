@@ -71,7 +71,7 @@ function Hero() {
 function Triad() {
   const cols = [
     ["Ledger", "book-open", "What you booked.", "NetSuite, Xero, QuickBooks, Sage, or a CSV export."],
-    ["Settlement", "receipt", "What the processor paid.", "Stripe, Adyen, Braintree, Checkout, Shopify Payments."],
+    ["Settlement", "receipt", "What Razorpay paid.", "Razorpay settlement reports, or a CSV export."],
     ["Bank", "landmark", "What actually arrived.", "Any account reachable over open banking or BAI2."],
   ];
   return (
@@ -125,13 +125,14 @@ function Explain() {
           </div>
         </div>
         <ThreeWayCompare
+          currency="INR"
           disagree={["amount"]}
           records={{
             ledger: { amount: 4820.0, date: "2026-08-14", reference: "INV-88231" },
             settlement: { amount: 4820.0, date: "2026-08-14", reference: "INV-88231" },
             bank: { amount: 4407.81, date: "2026-08-15", reference: "INV-88231" },
           }}
-          note="The bank credit is $412.19 short of the settlement. The gap matches the processor's August chargeback fee, which is not posted to the ledger."
+          note="The bank credit is ₹412.19 short of the settlement. The gap matches Razorpay's chargeback fee for August, which is not posted to the ledger."
         />
       </div>
     </section>
@@ -143,13 +144,13 @@ function Numbers() {
     <section id="numbers" data-theme="ink" style={{ background: "var(--surface-page)", color: "var(--text-primary)", scrollMarginTop: 60 }}>
       <div style={{ ...MAX, padding: "var(--space-12) var(--space-9)", display: "grid", gap: "var(--space-9)" }}>
         <div style={{ display: "grid", gap: "var(--space-5)", maxWidth: "46ch" }}>
-          <span style={{ ...LBL, color: "var(--text-tertiary)" }}>A month at Northwind Trading</span>
+          <span style={{ ...LBL, color: "var(--text-tertiary)" }}>A month at Marigold Retail</span>
           <h2 style={{ margin: 0, fontFamily: "var(--font-display)", fontSize: "var(--text-display-md)", fontWeight: "var(--weight-regular)", lineHeight: 1.1, letterSpacing: "var(--tracking-display)", color: "var(--text-primary)" }}>
             1,258 transactions. 17 questions.
           </h2>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "var(--space-9)", paddingTop: "var(--space-6)", borderTop: "1px solid var(--border-hairline)" }}>
-          {[["Matched automatically", "97.4%"], ["Breaks surfaced", "17"], ["Value explained", "$1.28m"], ["Close time", "3 days"]].map(([k, v]) => (
+          {[["Matched automatically", "97.4%"], ["Breaks surfaced", "17"], ["Value explained", "₹1.28Cr"], ["Close time", "3 days"]].map(([k, v]) => (
             <div key={k} style={{ display: "grid", gap: "var(--space-4)" }}>
               <span style={{ ...LBL, color: "var(--text-tertiary)" }}>{k}</span>
               <span style={{ fontFamily: "var(--font-mono)", fontSize: "34px", fontWeight: "var(--weight-medium)", fontVariantNumeric: "tabular-nums lining-nums", letterSpacing: "-0.02em", color: "var(--text-primary)" }}>{v}</span>
@@ -157,7 +158,7 @@ function Numbers() {
           ))}
         </div>
         <div style={{ paddingTop: "var(--space-6)" }}>
-          <VarianceBar matched={1225400} review={42100} broken={17300} />
+          <VarianceBar currency="INR" matched={1225400} review={42100} broken={17300} />
         </div>
       </div>
     </section>

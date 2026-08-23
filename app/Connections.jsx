@@ -5,23 +5,21 @@ const SOURCES = [
   {
     key: "ledger", title: "Ledger", icon: "book-open",
     blurb: "The book of record. Milaan reads it, never writes to it without your say.",
-    connections: [{ name: "NetSuite", detail: "Northwind Trading · 4 subsidiaries", state: "ok", last: "08:41", lines: 1258 }],
+    connections: [{ name: "NetSuite", detail: "Marigold Retail · 4 subsidiaries", state: "ok", last: "08:41", lines: 1258 }],
   },
   {
     key: "settlement", title: "Settlement", icon: "receipt",
-    blurb: "What each processor says it paid you, and what it withheld.",
+    blurb: "What Razorpay says it settled, and what it withheld.",
     connections: [
-      { name: "Stripe", detail: "acct_1NwK · USD, EUR", state: "ok", last: "08:41", lines: 812 },
-      { name: "Adyen", detail: "NL merchant · EUR", state: "ok", last: "08:41", lines: 401 },
-      { name: "Braintree", detail: "US merchant · USD", state: "stale", last: "Aug 12", lines: 28 },
+      { name: "Razorpay", detail: "acct_MRGD01 · INR", state: "ok", last: "08:41", lines: 812 },
     ],
   },
   {
     key: "bank", title: "Bank", icon: "landmark",
     blurb: "What actually arrived. The only source that settles the argument.",
     connections: [
-      { name: "Chase", detail: "•••• 4410 · operating", state: "ok", last: "08:39", lines: 908 },
-      { name: "Barclays", detail: "•••• 7712 · EUR", state: "ok", last: "08:39", lines: 288 },
+      { name: "HDFC Bank", detail: "•••• 4410 · current account", state: "ok", last: "08:39", lines: 908 },
+      { name: "ICICI Bank", detail: "•••• 7712 · current account", state: "ok", last: "08:39", lines: 288 },
     ],
   },
 ];

@@ -3,13 +3,20 @@ const { Wordmark, Icon, Badge, IconButton, Button } = window.MilaanUI;
 
 const NAV = [
   { id: "overview", label: "Overview", icon: "scale" },
-  { id: "breaks", label: "Breaks", icon: "git-compare-arrows", count: 17 },
+  { id: "breaks", label: "Breaks", icon: "git-compare-arrows" },
   { id: "rules", label: "Rules", icon: "sliders-horizontal" },
   { id: "connections", label: "Connections", icon: "link" },
 ];
 
 function Shell({ view, onView, children }) {
   const [hover, setHover] = React.useState(null);
+  const [breaksCount, setBreaksCount] = React.useState(null);
+
+  React.useEffect(() => {
+    window.MilaanAPI.loadLatestBatch()
+      .then((d) => setBreaksCount(d ? d.stats.exceptionCount : null))
+      .catch(() => setBreaksCount(null));
+  }, []);
   return (
     <div style={{ display: "grid", gridTemplateColumns: "var(--sidebar-w) 1fr", height: "100%", background: "var(--surface-page)", position: "relative", overflow: "hidden" }}>
       <aside style={{ borderRight: "1px solid var(--border-hairline)", background: "var(--paper)", display: "flex", flexDirection: "column" }}>
@@ -38,8 +45,8 @@ function Shell({ view, onView, children }) {
               >
                 <Icon name={n.icon} size={14} color={on ? "var(--text-primary)" : "var(--text-tertiary)"} />
                 <span style={{ flex: 1 }}>{n.label}</span>
-                {n.count ? (
-                  <span style={{ font: "var(--type-mono-sm)", color: "var(--signal-break)", fontVariantNumeric: "tabular-nums" }}>{n.count}</span>
+                {n.id === "breaks" && breaksCount ? (
+                  <span style={{ font: "var(--type-mono-sm)", color: "var(--signal-break)", fontVariantNumeric: "tabular-nums" }}>{breaksCount}</span>
                 ) : null}
               </button>
             );
@@ -60,7 +67,7 @@ function Shell({ view, onView, children }) {
       <main style={{ display: "flex", flexDirection: "column", minWidth: 0, overflow: "hidden" }}>
         <header style={{ height: "var(--topbar-h)", flexShrink: 0, display: "flex", alignItems: "center", gap: "var(--space-6)", padding: "0 var(--space-8)", borderBottom: "1px solid var(--border-hairline)", background: "var(--paper)" }}>
           <span style={{ font: "var(--type-mono-sm)", color: "var(--text-tertiary)" }}>
-            Northwind Trading <span style={{ color: "var(--ink-300)" }}>/</span>{" "}
+            Marigold Retail <span style={{ color: "var(--ink-300)" }}>/</span>{" "}
             <span style={{ color: "var(--text-primary)" }}>{NAV.find((n) => n.id === view).label}</span>
           </span>
           <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "var(--space-4)" }}>
