@@ -25,7 +25,7 @@ function Nav() {
           ))}
         </nav>
         <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "var(--space-5)" }}>
-          <a href="../app/index.html" style={{ font: "var(--weight-regular) var(--text-body-sm)/1 var(--font-sans)", color: "var(--text-secondary)", whiteSpace: "nowrap" }}>Sign in</a>
+          <a href="app/index.html" style={{ font: "var(--weight-regular) var(--text-body-sm)/1 var(--font-sans)", color: "var(--text-secondary)", whiteSpace: "nowrap" }}>Sign in</a>
           <Button variant="primary" size="sm" iconAfter="arrow-right">Book a walkthrough</Button>
         </div>
       </div>
@@ -210,7 +210,7 @@ function CTA() {
 
 function Footer() {
   const cols = [
-    ["Product", [["Open the workspace", "../app/index.html"], ["How it works", "#how"], ["Sources", "#sources"], ["Security", "#security"]]],
+    ["Product", [["Open the workspace", "app/index.html"], ["How it works", "#how"], ["Sources", "#sources"], ["Security", "#security"]]],
     ["Company", [["About", "#"], ["Careers", "#"], ["Contact", "#"]]],
     ["Resources", [["Docs", "#"], ["API reference", "#"], ["Status", "#"]]],
   ];

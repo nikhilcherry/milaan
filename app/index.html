@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milaan — workspace</title>
+<meta name="description" content="Northwind Trading's Milaan reconciliation workspace: overview, breaks, rules, and connections.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../styles/tokens.css">
+<style>
+  html, body { height: 100%; }
+  body { margin: 0; overflow: hidden; background: var(--paper); }
+  #root { height: 100vh; }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="react" src="../src/design-system.jsx"></script>
+<script src="data.js"></script>
+<script type="text/babel" data-presets="react" src="Shell.jsx"></script>
+<script type="text/babel" data-presets="react" src="Overview.jsx"></script>
+<script type="text/babel" data-presets="react" src="Breaks.jsx"></script>
+<script type="text/babel" data-presets="react" src="Rules.jsx"></script>
+<script type="text/babel" data-presets="react" src="Connections.jsx"></script>
+
+<script type="text/babel" data-presets="react">
+  function App() {
+    const [view, setView] = React.useState("overview");
+    const Shell = window.MilaanShell;
+    const body =
+      view === "breaks" ? <window.MilaanBreaks />
+      : view === "rules" ? <window.MilaanRules />
+      : view === "connections" ? <window.MilaanConnections />
+      : <window.MilaanOverview onOpenBreaks={() => setView("breaks")} />;
+    return <Shell view={view} onView={setView}>{body}</Shell>;
+  }
+  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
