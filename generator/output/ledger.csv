@@ -1,0 +1,119 @@
+Date,Invoice No,Party,Amount,Type
+2026-08-04,INV-88001,Kavya Textiles,27762.93,Sale
+2026-08-06,INV-88002,Nimbus Cloud Services,9810.52,Sale
+2026-08-08,INV-88004,Rana Electricals,40289.31,Sale
+2026-08-13,INV-88005,Ashoka Traders,47000.73,Sale
+2026-08-02,INV-88006,Nimbus Cloud Services,497.79,Sale
+2026-08-05,INV-88007,Petal & Stem,24867.14,Sale
+2026-08-09,INV-0088008,Rana Electricals,29655.40,Sale
+2026-08-09,INV-88009,Petal & Stem,11756.46,Sale
+2026-08-08,INV-88010,Copper Kettle Cafe,6728.42,Sale
+2026-08-14,INV-88011,Zenith Motors,27475.97,Sale
+2026-08-05,INV-88012,Lumen Design Studio,9850.88,Sale
+2026-08-20,INV-88013,Copper Kettle Cafe,43120.53,Sale
+2026-08-17,INV-88014,Harbor Point Exports,29383.99,Sale
+2026-08-09,INV-88015,Aster Wellness,16287.47,Sale
+2026-08-05,INV-88016,Petal & Stem,3832.15,Sale
+2026-08-02,INV-88017,Kavya Textiles,11633.59,Sale
+2026-08-13,INV-88018,Kavya Textiles,25645.42,Sale
+2026-08-16,INV-88020,Meridian Foods Pvt Ltd,39734.35,Sale
+2026-08-11,INV-88021,Ashoka Traders,16395.94,Sale
+2026-08-06,INV-88022,Orbit Analytics,26731.72,Sale
+2026-08-02,INV-88023,Verve Retail,19673.20,Sale
+2026-08-19,INV-88024,Ashoka Traders,24963.87,Sale
+2026-08-11,INV-0088025,Rana Electricals,14094.84,Sale
+2026-08-04,INV-88026,Coral Bay Hospitality,38714.37,Sale
+2026-08-09,INV-88027,Meridian Foods Pvt Ltd,36754.65,Sale
+2026-08-08,INV-88028,Nimbus Cloud Services,24901.93,Sale
+2026-08-05,INV-88029,BluePeak Logistics,41988.33,Sale
+2026-08-18,INV-88030,Verve Retail,37725.44,Sale
+2026-08-17,INV-88031,Kavya Textiles,28774.74,Sale
+2026-08-16,INV-88032,Harbor Point Exports,25977.47,Sale
+2026-08-14,INV-88033,Aster Wellness,20490.00,Sale
+2026-08-18,INV-88034,Harbor Point Exports,1548.20,Sale
+2026-08-05,INV-88035,Ridgeline Hardware,38188.20,Sale
+2026-08-12,INV-88036,Saffron & Co,5998.40,Sale
+2026-08-03,INV-88037,Kavya Textiles,28991.51,Sale
+2026-08-07,INV-88038,Verve Retail,27777.40,Sale
+2026-08-12,INV-88039,Saffron & Co,11689.15,Sale
+2026-08-15,INV-88040,Harbor Point Exports,43332.37,Sale
+2026-08-16,INV-88041,Petal & Stem,31346.28,Sale
+2026-08-04,INV-88042,Orbit Analytics,20903.14,Sale
+2026-08-01,INV-88043,Falcon Freight,24595.29,Sale
+2026-08-14,INV-88044,Aster Wellness,18079.62,Sale
+2026-08-04,INV-88045,Meridian Foods Pvt Ltd,40597.54,Sale
+2026-08-01,INV-88046,Harbor Point Exports,35128.43,Sale
+2026-08-09,INV-88048,Nimbus Cloud Services,14839.09,Sale
+2026-08-06,INV-88049,Ashoka Traders,20355.75,Sale
+2026-08-04,INV-88050,Nimbus Cloud Services,28227.90,Sale
+2026-08-18,INV-88051,Rana Electricals,14250.77,Sale
+2026-08-18,INV-88052,Verve Retail,26929.28,Sale
+2026-08-10,INV-88053,Orbit Analytics,12394.89,Sale
+2026-08-17,INV-88054,Copper Kettle Cafe,15827.28,Sale
+2026-08-01,INV-88055,Kavya Textiles,33534.32,Sale
+2026-08-04,INV-88056,Orbit Analytics,30378.82,Sale
+2026-08-11,INV-88057,BluePeak Logistics,26675.50,Sale
+2026-08-10,INV-88058,Zenith Motors,35603.23,Sale
+2026-08-09,INV-88059,Ashoka Traders,13336.62,Sale
+2026-08-14,INV-88060,Zenith Motors,14899.65,Sale
+2026-08-04,INV-88061,Ridgeline Hardware,31965.23,Sale
+2026-08-10,INV-88062,Ridgeline Hardware,1279.46,Sale
+2026-08-04,INV-88063,Orbit Analytics,46334.71,Sale
+2026-08-01,INV-88064,Ridgeline Hardware,20890.84,Sale
+2026-08-04,INV-88065,Harbor Point Exports,26624.57,Sale
+2026-08-10,INV-88066,Orbit Analytics,40837.57,Sale
+2026-08-02,INV-88067,Falcon Freight,26489.59,Sale
+2026-08-13,INV-88068,Coral Bay Hospitality,33268.28,Sale
+2026-08-13,INV-88068,Coral Bay Hospitality,33268.28,Sale
+2026-08-09,INV-88069,Falcon Freight,3858.50,Sale
+2026-08-19,INV-88070,Petal & Stem,1440.02,Sale
+2026-08-14,INV-88071,BluePeak Logistics,31132.84,Sale
+2026-08-07,INV-88072,Meridian Foods Pvt Ltd,17946.53,Sale
+2026-08-18,INV-88073,Copper Kettle Cafe,1974.62,Sale
+2026-08-06,INV-88074,Lumen Design Studio,29967.38,Sale
+2026-08-01,INV-88075,Zenith Motors,46289.05,Sale
+2026-08-01,INV-88076,Ashoka Traders,4191.27,Sale
+2026-08-03,INV-88077,Ashoka Traders,25472.29,Sale
+2026-08-10,INV-88078,Orbit Analytics,38366.69,Sale
+2026-08-14,INV-88079,Petal & Stem,1977.00,Sale
+2026-08-07,INV-88080,Ridgeline Hardware,6954.56,Sale
+2026-08-16,INV-88081,Kavya Textiles,32109.71,Sale
+2026-08-17,INV-88082,Lumen Design Studio,5789.83,Sale
+2026-08-16,INV-88083,Copper Kettle Cafe,43489.40,Sale
+2026-08-07,INV-88084,Kavya Textiles,32232.71,Sale
+2026-08-15,INV-88085,Aster Wellness,12792.96,Sale
+2026-08-14,INV-88086,Meridian Foods Pvt Ltd,12328.84,Sale
+2026-08-11,INV-88087,Saffron & Co,2302.99,Sale
+2026-08-08,INV-88088,Harbor Point Exports,35744.40,Sale
+2026-08-15,INV-88089,Petal & Stem,29471.66,Sale
+2026-08-13,INV-88090,Ridgeline Hardware,39202.96,Sale
+2026-08-13,INV-88090,Ridgeline Hardware,39202.96,Sale
+2026-08-18,INV-88091,Verve Retail,24050.63,Sale
+2026-08-04,INV-88093,Falcon Freight,45832.93,Sale
+2026-08-19,INV-88094,Saffron & Co,7435.68,Sale
+2026-08-08,INV-88095,Nimbus Cloud Services,23056.80,Sale
+2026-08-03,INV-88096,Orbit Analytics,29619.98,Sale
+2026-08-20,INV-88097,Kavya Textiles,17815.90,Sale
+2026-08-13,INV-88098,Petal & Stem,28779.86,Sale
+2026-08-02,INV-88099,Ridgeline Hardware,3726.88,Sale
+2026-08-18,INV-88100,BluePeak Logistics,7512.25,Sale
+2026-08-01,INV-88101,Meridian Foods Pvt Ltd,37509.54,Sale
+2026-08-08,INV-88102,Rana Electricals,10272.47,Sale
+2026-08-14,INV-88103,Copper Kettle Cafe,21123.23,Sale
+2026-08-08,INV-88104,Coral Bay Hospitality,21872.92,Sale
+2026-08-01,INV-88105,Ashoka Traders,43643.93,Sale
+2026-08-03,INV-88106,Saffron & Co,13526.67,Sale
+2026-08-02,INV-88107,Aster Wellness,31400.71,Sale
+2026-08-03,INV-88108,Ridgeline Hardware,811.21,Sale
+2026-08-06,INV-88109,Aster Wellness,16956.45,Sale
+2026-08-16,INV-88110,Orbit Analytics,20372.41,Sale
+2026-08-08,INV-88111,Aster Wellness,34719.10,Sale
+2026-08-04,INV-88112,Copper Kettle Cafe,16298.48,Sale
+2026-08-15,INV-88113,Coral Bay Hospitality,44449.87,Sale
+2026-08-03,INV-88114,Coral Bay Hospitality,4904.60,Sale
+2026-08-07,INV-88115,Falcon Freight,4570.87,Sale
+2026-08-13,INV-88116,Meridian Foods Pvt Ltd,33122.94,Sale
+2026-08-19,INV-88117,Meridian Foods Pvt Ltd,31952.25,Sale
+2026-08-04,INV-88118,Rana Electricals,41001.65,Sale
+2026-08-20,INV-88119,Aster Wellness,14456.42,Sale
+2026-08-17,INV-88120,Orbit Analytics,11407.05,Sale

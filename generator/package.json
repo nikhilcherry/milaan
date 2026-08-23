@@ -1,0 +1,13 @@
+{
+  "name": "milaan-generator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "tsx generate.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "seed": 88231,
+  "count": 120,
+  "generatedAt": "2026-08-23T11:24:03.033Z",
+  "rowCounts": {
+    "ledger": 118,
+    "settlement": 120,
+    "bank": 117
+  },
+  "breakDistribution": {
+    "date_drift": 8,
+    "clean": 78,
+    "missing": 9,
+    "format_diff": 8,
+    "duplicate": 9,
+    "amount_mismatch": 8
+  }
+}

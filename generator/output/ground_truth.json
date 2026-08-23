@@ -1,0 +1,1213 @@
+[
+  {
+    "id": "GT-0001",
+    "reference": "INV-88001",
+    "date": "2026-08-04",
+    "amount": 27762.93,
+    "counterparty": "Kavya Textiles",
+    "breakType": "date_drift",
+    "breakDetail": {
+      "driftDays": 2,
+      "in": "bank"
+    }
+  },
+  {
+    "id": "GT-0002",
+    "reference": "INV-88002",
+    "date": "2026-08-06",
+    "amount": 9810.52,
+    "counterparty": "Nimbus Cloud Services",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0003",
+    "reference": "INV-88003",
+    "date": "2026-08-06",
+    "amount": 21936.96,
+    "counterparty": "BluePeak Logistics",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "ledger",
+        "bank"
+      ]
+    }
+  },
+  {
+    "id": "GT-0004",
+    "reference": "INV-88004",
+    "date": "2026-08-08",
+    "amount": 40289.31,
+    "counterparty": "Rana Electricals",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0005",
+    "reference": "INV-88005",
+    "date": "2026-08-13",
+    "amount": 47000.73,
+    "counterparty": "Ashoka Traders",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "settlement"
+      ]
+    }
+  },
+  {
+    "id": "GT-0006",
+    "reference": "INV-88006",
+    "date": "2026-08-02",
+    "amount": 497.79,
+    "counterparty": "Nimbus Cloud Services",
+    "breakType": "format_diff",
+    "breakDetail": {
+      "corruptedIn": "settlement",
+      "style": "lowercase"
+    }
+  },
+  {
+    "id": "GT-0007",
+    "reference": "INV-88007",
+    "date": "2026-08-05",
+    "amount": 24867.14,
+    "counterparty": "Petal & Stem",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "bank",
+        "settlement"
+      ]
+    }
+  },
+  {
+    "id": "GT-0008",
+    "reference": "INV-88008",
+    "date": "2026-08-09",
+    "amount": 29655.4,
+    "counterparty": "Rana Electricals",
+    "breakType": "format_diff",
+    "breakDetail": {
+      "corruptedIn": "ledger",
+      "style": "zero-padded"
+    }
+  },
+  {
+    "id": "GT-0009",
+    "reference": "INV-88009",
+    "date": "2026-08-09",
+    "amount": 11756.46,
+    "counterparty": "Petal & Stem",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0010",
+    "reference": "INV-88010",
+    "date": "2026-08-08",
+    "amount": 6728.42,
+    "counterparty": "Copper Kettle Cafe",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0011",
+    "reference": "INV-88011",
+    "date": "2026-08-14",
+    "amount": 27475.97,
+    "counterparty": "Zenith Motors",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0012",
+    "reference": "INV-88012",
+    "date": "2026-08-05",
+    "amount": 9850.88,
+    "counterparty": "Lumen Design Studio",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0013",
+    "reference": "INV-88013",
+    "date": "2026-08-20",
+    "amount": 43120.53,
+    "counterparty": "Copper Kettle Cafe",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0014",
+    "reference": "INV-88014",
+    "date": "2026-08-17",
+    "amount": 29383.99,
+    "counterparty": "Harbor Point Exports",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0015",
+    "reference": "INV-88015",
+    "date": "2026-08-09",
+    "amount": 16287.47,
+    "counterparty": "Aster Wellness",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0016",
+    "reference": "INV-88016",
+    "date": "2026-08-05",
+    "amount": 3832.15,
+    "counterparty": "Petal & Stem",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0017",
+    "reference": "INV-88017",
+    "date": "2026-08-02",
+    "amount": 11633.59,
+    "counterparty": "Kavya Textiles",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0018",
+    "reference": "INV-88018",
+    "date": "2026-08-13",
+    "amount": 25645.42,
+    "counterparty": "Kavya Textiles",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0019",
+    "reference": "INV-88019",
+    "date": "2026-08-17",
+    "amount": 15468.6,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "ledger",
+        "bank"
+      ]
+    }
+  },
+  {
+    "id": "GT-0020",
+    "reference": "INV-88020",
+    "date": "2026-08-16",
+    "amount": 39734.35,
+    "counterparty": "Meridian Foods Pvt Ltd",
+    "breakType": "format_diff",
+    "breakDetail": {
+      "corruptedIn": "settlement",
+      "style": "prefix-swap"
+    }
+  },
+  {
+    "id": "GT-0021",
+    "reference": "INV-88021",
+    "date": "2026-08-11",
+    "amount": 16395.94,
+    "counterparty": "Ashoka Traders",
+    "breakType": "date_drift",
+    "breakDetail": {
+      "driftDays": 3,
+      "in": "bank"
+    }
+  },
+  {
+    "id": "GT-0022",
+    "reference": "INV-88022",
+    "date": "2026-08-06",
+    "amount": 26731.72,
+    "counterparty": "Orbit Analytics",
+    "breakType": "format_diff",
+    "breakDetail": {
+      "corruptedIn": "settlement",
+      "style": "prefix-swap"
+    }
+  },
+  {
+    "id": "GT-0023",
+    "reference": "INV-88023",
+    "date": "2026-08-02",
+    "amount": 19673.2,
+    "counterparty": "Verve Retail",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0024",
+    "reference": "INV-88024",
+    "date": "2026-08-19",
+    "amount": 24963.87,
+    "counterparty": "Ashoka Traders",
+    "breakType": "format_diff",
+    "breakDetail": {
+      "corruptedIn": "settlement",
+      "style": "zero-padded"
+    }
+  },
+  {
+    "id": "GT-0025",
+    "reference": "INV-88025",
+    "date": "2026-08-11",
+    "amount": 14094.84,
+    "counterparty": "Rana Electricals",
+    "breakType": "format_diff",
+    "breakDetail": {
+      "corruptedIn": "ledger",
+      "style": "zero-padded"
+    }
+  },
+  {
+    "id": "GT-0026",
+    "reference": "INV-88026",
+    "date": "2026-08-04",
+    "amount": 38714.37,
+    "counterparty": "Coral Bay Hospitality",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0027",
+    "reference": "INV-88027",
+    "date": "2026-08-09",
+    "amount": 36754.65,
+    "counterparty": "Meridian Foods Pvt Ltd",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0028",
+    "reference": "INV-88028",
+    "date": "2026-08-08",
+    "amount": 24901.93,
+    "counterparty": "Nimbus Cloud Services",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "bank"
+    }
+  },
+  {
+    "id": "GT-0029",
+    "reference": "INV-88029",
+    "date": "2026-08-05",
+    "amount": 41988.33,
+    "counterparty": "BluePeak Logistics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0030",
+    "reference": "INV-88030",
+    "date": "2026-08-18",
+    "amount": 37725.44,
+    "counterparty": "Verve Retail",
+    "breakType": "amount_mismatch",
+    "breakDetail": {
+      "flavor": "fee",
+      "delta": 1132
+    }
+  },
+  {
+    "id": "GT-0031",
+    "reference": "INV-88031",
+    "date": "2026-08-17",
+    "amount": 28774.74,
+    "counterparty": "Kavya Textiles",
+    "breakType": "amount_mismatch",
+    "breakDetail": {
+      "flavor": "fee",
+      "delta": 863
+    }
+  },
+  {
+    "id": "GT-0032",
+    "reference": "INV-88032",
+    "date": "2026-08-16",
+    "amount": 25977.47,
+    "counterparty": "Harbor Point Exports",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0033",
+    "reference": "INV-88033",
+    "date": "2026-08-14",
+    "amount": 20490,
+    "counterparty": "Aster Wellness",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0034",
+    "reference": "INV-88034",
+    "date": "2026-08-18",
+    "amount": 1548.2,
+    "counterparty": "Harbor Point Exports",
+    "breakType": "amount_mismatch",
+    "breakDetail": {
+      "flavor": "fee",
+      "delta": 31
+    }
+  },
+  {
+    "id": "GT-0035",
+    "reference": "INV-88035",
+    "date": "2026-08-05",
+    "amount": 38188.2,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "date_drift",
+    "breakDetail": {
+      "driftDays": 2,
+      "in": "bank"
+    }
+  },
+  {
+    "id": "GT-0036",
+    "reference": "INV-88036",
+    "date": "2026-08-12",
+    "amount": 5998.4,
+    "counterparty": "Saffron & Co",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0037",
+    "reference": "INV-88037",
+    "date": "2026-08-03",
+    "amount": 28991.51,
+    "counterparty": "Kavya Textiles",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0038",
+    "reference": "INV-88038",
+    "date": "2026-08-07",
+    "amount": 27777.4,
+    "counterparty": "Verve Retail",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0039",
+    "reference": "INV-88039",
+    "date": "2026-08-12",
+    "amount": 11689.15,
+    "counterparty": "Saffron & Co",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0040",
+    "reference": "INV-88040",
+    "date": "2026-08-15",
+    "amount": 43332.37,
+    "counterparty": "Harbor Point Exports",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0041",
+    "reference": "INV-88041",
+    "date": "2026-08-16",
+    "amount": 31346.28,
+    "counterparty": "Petal & Stem",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0042",
+    "reference": "INV-88042",
+    "date": "2026-08-04",
+    "amount": 20903.14,
+    "counterparty": "Orbit Analytics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0043",
+    "reference": "INV-88043",
+    "date": "2026-08-01",
+    "amount": 24595.29,
+    "counterparty": "Falcon Freight",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0044",
+    "reference": "INV-88044",
+    "date": "2026-08-14",
+    "amount": 18079.62,
+    "counterparty": "Aster Wellness",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0045",
+    "reference": "INV-88045",
+    "date": "2026-08-04",
+    "amount": 40597.54,
+    "counterparty": "Meridian Foods Pvt Ltd",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0046",
+    "reference": "INV-88046",
+    "date": "2026-08-01",
+    "amount": 35128.43,
+    "counterparty": "Harbor Point Exports",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0047",
+    "reference": "INV-88047",
+    "date": "2026-08-02",
+    "amount": 5051.54,
+    "counterparty": "Ashoka Traders",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "bank",
+        "ledger"
+      ]
+    }
+  },
+  {
+    "id": "GT-0048",
+    "reference": "INV-88048",
+    "date": "2026-08-09",
+    "amount": 14839.09,
+    "counterparty": "Nimbus Cloud Services",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0049",
+    "reference": "INV-88049",
+    "date": "2026-08-06",
+    "amount": 20355.75,
+    "counterparty": "Ashoka Traders",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0050",
+    "reference": "INV-88050",
+    "date": "2026-08-04",
+    "amount": 28227.9,
+    "counterparty": "Nimbus Cloud Services",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0051",
+    "reference": "INV-88051",
+    "date": "2026-08-18",
+    "amount": 14250.77,
+    "counterparty": "Rana Electricals",
+    "breakType": "date_drift",
+    "breakDetail": {
+      "driftDays": 2,
+      "in": "bank"
+    }
+  },
+  {
+    "id": "GT-0052",
+    "reference": "INV-88052",
+    "date": "2026-08-18",
+    "amount": 26929.28,
+    "counterparty": "Verve Retail",
+    "breakType": "date_drift",
+    "breakDetail": {
+      "driftDays": 2,
+      "in": "bank"
+    }
+  },
+  {
+    "id": "GT-0053",
+    "reference": "INV-88053",
+    "date": "2026-08-10",
+    "amount": 12394.89,
+    "counterparty": "Orbit Analytics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0054",
+    "reference": "INV-88054",
+    "date": "2026-08-17",
+    "amount": 15827.28,
+    "counterparty": "Copper Kettle Cafe",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "bank"
+    }
+  },
+  {
+    "id": "GT-0055",
+    "reference": "INV-88055",
+    "date": "2026-08-01",
+    "amount": 33534.32,
+    "counterparty": "Kavya Textiles",
+    "breakType": "amount_mismatch",
+    "breakDetail": {
+      "flavor": "error",
+      "delta": 68
+    }
+  },
+  {
+    "id": "GT-0056",
+    "reference": "INV-88056",
+    "date": "2026-08-04",
+    "amount": 30378.82,
+    "counterparty": "Orbit Analytics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0057",
+    "reference": "INV-88057",
+    "date": "2026-08-11",
+    "amount": 26675.5,
+    "counterparty": "BluePeak Logistics",
+    "breakType": "date_drift",
+    "breakDetail": {
+      "driftDays": 1,
+      "in": "bank"
+    }
+  },
+  {
+    "id": "GT-0058",
+    "reference": "INV-88058",
+    "date": "2026-08-10",
+    "amount": 35603.23,
+    "counterparty": "Zenith Motors",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0059",
+    "reference": "INV-88059",
+    "date": "2026-08-09",
+    "amount": 13336.62,
+    "counterparty": "Ashoka Traders",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0060",
+    "reference": "INV-88060",
+    "date": "2026-08-14",
+    "amount": 14899.65,
+    "counterparty": "Zenith Motors",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0061",
+    "reference": "INV-88061",
+    "date": "2026-08-04",
+    "amount": 31965.23,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0062",
+    "reference": "INV-88062",
+    "date": "2026-08-10",
+    "amount": 1279.46,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0063",
+    "reference": "INV-88063",
+    "date": "2026-08-04",
+    "amount": 46334.71,
+    "counterparty": "Orbit Analytics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0064",
+    "reference": "INV-88064",
+    "date": "2026-08-01",
+    "amount": 20890.84,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0065",
+    "reference": "INV-88065",
+    "date": "2026-08-04",
+    "amount": 26624.57,
+    "counterparty": "Harbor Point Exports",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0066",
+    "reference": "INV-88066",
+    "date": "2026-08-10",
+    "amount": 40837.57,
+    "counterparty": "Orbit Analytics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0067",
+    "reference": "INV-88067",
+    "date": "2026-08-02",
+    "amount": 26489.59,
+    "counterparty": "Falcon Freight",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0068",
+    "reference": "INV-88068",
+    "date": "2026-08-13",
+    "amount": 33268.28,
+    "counterparty": "Coral Bay Hospitality",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "ledger"
+    }
+  },
+  {
+    "id": "GT-0069",
+    "reference": "INV-88069",
+    "date": "2026-08-09",
+    "amount": 3858.5,
+    "counterparty": "Falcon Freight",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0070",
+    "reference": "INV-88070",
+    "date": "2026-08-19",
+    "amount": 1440.02,
+    "counterparty": "Petal & Stem",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "settlement"
+    }
+  },
+  {
+    "id": "GT-0071",
+    "reference": "INV-88071",
+    "date": "2026-08-14",
+    "amount": 31132.84,
+    "counterparty": "BluePeak Logistics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0072",
+    "reference": "INV-88072",
+    "date": "2026-08-07",
+    "amount": 17946.53,
+    "counterparty": "Meridian Foods Pvt Ltd",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0073",
+    "reference": "INV-88073",
+    "date": "2026-08-18",
+    "amount": 1974.62,
+    "counterparty": "Copper Kettle Cafe",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0074",
+    "reference": "INV-88074",
+    "date": "2026-08-06",
+    "amount": 29967.38,
+    "counterparty": "Lumen Design Studio",
+    "breakType": "amount_mismatch",
+    "breakDetail": {
+      "flavor": "error",
+      "delta": 207
+    }
+  },
+  {
+    "id": "GT-0075",
+    "reference": "INV-88075",
+    "date": "2026-08-01",
+    "amount": 46289.05,
+    "counterparty": "Zenith Motors",
+    "breakType": "format_diff",
+    "breakDetail": {
+      "corruptedIn": "settlement",
+      "style": "underscore"
+    }
+  },
+  {
+    "id": "GT-0076",
+    "reference": "INV-88076",
+    "date": "2026-08-01",
+    "amount": 4191.27,
+    "counterparty": "Ashoka Traders",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0077",
+    "reference": "INV-88077",
+    "date": "2026-08-03",
+    "amount": 25472.29,
+    "counterparty": "Ashoka Traders",
+    "breakType": "amount_mismatch",
+    "breakDetail": {
+      "flavor": "error",
+      "delta": 297
+    }
+  },
+  {
+    "id": "GT-0078",
+    "reference": "INV-88078",
+    "date": "2026-08-10",
+    "amount": 38366.69,
+    "counterparty": "Orbit Analytics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0079",
+    "reference": "INV-88079",
+    "date": "2026-08-14",
+    "amount": 1977,
+    "counterparty": "Petal & Stem",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0080",
+    "reference": "INV-88080",
+    "date": "2026-08-07",
+    "amount": 6954.56,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "format_diff",
+    "breakDetail": {
+      "corruptedIn": "settlement",
+      "style": "prefix-swap"
+    }
+  },
+  {
+    "id": "GT-0081",
+    "reference": "INV-88081",
+    "date": "2026-08-16",
+    "amount": 32109.71,
+    "counterparty": "Kavya Textiles",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0082",
+    "reference": "INV-88082",
+    "date": "2026-08-17",
+    "amount": 5789.83,
+    "counterparty": "Lumen Design Studio",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "settlement"
+    }
+  },
+  {
+    "id": "GT-0083",
+    "reference": "INV-88083",
+    "date": "2026-08-16",
+    "amount": 43489.4,
+    "counterparty": "Copper Kettle Cafe",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0084",
+    "reference": "INV-88084",
+    "date": "2026-08-07",
+    "amount": 32232.71,
+    "counterparty": "Kavya Textiles",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0085",
+    "reference": "INV-88085",
+    "date": "2026-08-15",
+    "amount": 12792.96,
+    "counterparty": "Aster Wellness",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0086",
+    "reference": "INV-88086",
+    "date": "2026-08-14",
+    "amount": 12328.84,
+    "counterparty": "Meridian Foods Pvt Ltd",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0087",
+    "reference": "INV-88087",
+    "date": "2026-08-11",
+    "amount": 2302.99,
+    "counterparty": "Saffron & Co",
+    "breakType": "amount_mismatch",
+    "breakDetail": {
+      "flavor": "fee",
+      "delta": 69
+    }
+  },
+  {
+    "id": "GT-0088",
+    "reference": "INV-88088",
+    "date": "2026-08-08",
+    "amount": 35744.4,
+    "counterparty": "Harbor Point Exports",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0089",
+    "reference": "INV-88089",
+    "date": "2026-08-15",
+    "amount": 29471.66,
+    "counterparty": "Petal & Stem",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0090",
+    "reference": "INV-88090",
+    "date": "2026-08-13",
+    "amount": 39202.96,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "ledger"
+    }
+  },
+  {
+    "id": "GT-0091",
+    "reference": "INV-88091",
+    "date": "2026-08-18",
+    "amount": 24050.63,
+    "counterparty": "Verve Retail",
+    "breakType": "date_drift",
+    "breakDetail": {
+      "driftDays": 1,
+      "in": "bank"
+    }
+  },
+  {
+    "id": "GT-0092",
+    "reference": "INV-88092",
+    "date": "2026-08-11",
+    "amount": 47089.92,
+    "counterparty": "Orbit Analytics",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "ledger",
+        "bank"
+      ]
+    }
+  },
+  {
+    "id": "GT-0093",
+    "reference": "INV-88093",
+    "date": "2026-08-04",
+    "amount": 45832.93,
+    "counterparty": "Falcon Freight",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "settlement"
+      ]
+    }
+  },
+  {
+    "id": "GT-0094",
+    "reference": "INV-88094",
+    "date": "2026-08-19",
+    "amount": 7435.68,
+    "counterparty": "Saffron & Co",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0095",
+    "reference": "INV-88095",
+    "date": "2026-08-08",
+    "amount": 23056.8,
+    "counterparty": "Nimbus Cloud Services",
+    "breakType": "amount_mismatch",
+    "breakDetail": {
+      "flavor": "fee",
+      "delta": 692
+    }
+  },
+  {
+    "id": "GT-0096",
+    "reference": "INV-88096",
+    "date": "2026-08-03",
+    "amount": 29619.98,
+    "counterparty": "Orbit Analytics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0097",
+    "reference": "INV-88097",
+    "date": "2026-08-20",
+    "amount": 17815.9,
+    "counterparty": "Kavya Textiles",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0098",
+    "reference": "INV-88098",
+    "date": "2026-08-13",
+    "amount": 28779.86,
+    "counterparty": "Petal & Stem",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0099",
+    "reference": "INV-88099",
+    "date": "2026-08-02",
+    "amount": 3726.88,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0100",
+    "reference": "INV-88100",
+    "date": "2026-08-18",
+    "amount": 7512.25,
+    "counterparty": "BluePeak Logistics",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "settlement"
+    }
+  },
+  {
+    "id": "GT-0101",
+    "reference": "INV-88101",
+    "date": "2026-08-01",
+    "amount": 37509.54,
+    "counterparty": "Meridian Foods Pvt Ltd",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0102",
+    "reference": "INV-88102",
+    "date": "2026-08-08",
+    "amount": 10272.47,
+    "counterparty": "Rana Electricals",
+    "breakType": "date_drift",
+    "breakDetail": {
+      "driftDays": 2,
+      "in": "bank"
+    }
+  },
+  {
+    "id": "GT-0103",
+    "reference": "INV-88103",
+    "date": "2026-08-14",
+    "amount": 21123.23,
+    "counterparty": "Copper Kettle Cafe",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "settlement"
+    }
+  },
+  {
+    "id": "GT-0104",
+    "reference": "INV-88104",
+    "date": "2026-08-08",
+    "amount": 21872.92,
+    "counterparty": "Coral Bay Hospitality",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0105",
+    "reference": "INV-88105",
+    "date": "2026-08-01",
+    "amount": 43643.93,
+    "counterparty": "Ashoka Traders",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0106",
+    "reference": "INV-88106",
+    "date": "2026-08-03",
+    "amount": 13526.67,
+    "counterparty": "Saffron & Co",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0107",
+    "reference": "INV-88107",
+    "date": "2026-08-02",
+    "amount": 31400.71,
+    "counterparty": "Aster Wellness",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0108",
+    "reference": "INV-88108",
+    "date": "2026-08-03",
+    "amount": 811.21,
+    "counterparty": "Ridgeline Hardware",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0109",
+    "reference": "INV-88109",
+    "date": "2026-08-06",
+    "amount": 16956.45,
+    "counterparty": "Aster Wellness",
+    "breakType": "duplicate",
+    "breakDetail": {
+      "duplicatedIn": "bank"
+    }
+  },
+  {
+    "id": "GT-0110",
+    "reference": "INV-88110",
+    "date": "2026-08-16",
+    "amount": 20372.41,
+    "counterparty": "Orbit Analytics",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0111",
+    "reference": "INV-88111",
+    "date": "2026-08-08",
+    "amount": 34719.1,
+    "counterparty": "Aster Wellness",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0112",
+    "reference": "INV-88112",
+    "date": "2026-08-04",
+    "amount": 16298.48,
+    "counterparty": "Copper Kettle Cafe",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0113",
+    "reference": "INV-88113",
+    "date": "2026-08-15",
+    "amount": 44449.87,
+    "counterparty": "Coral Bay Hospitality",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0114",
+    "reference": "INV-88114",
+    "date": "2026-08-03",
+    "amount": 4904.6,
+    "counterparty": "Coral Bay Hospitality",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0115",
+    "reference": "INV-88115",
+    "date": "2026-08-07",
+    "amount": 4570.87,
+    "counterparty": "Falcon Freight",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "settlement"
+      ]
+    }
+  },
+  {
+    "id": "GT-0116",
+    "reference": "INV-88116",
+    "date": "2026-08-13",
+    "amount": 33122.94,
+    "counterparty": "Meridian Foods Pvt Ltd",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0117",
+    "reference": "INV-88117",
+    "date": "2026-08-19",
+    "amount": 31952.25,
+    "counterparty": "Meridian Foods Pvt Ltd",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0118",
+    "reference": "INV-88118",
+    "date": "2026-08-04",
+    "amount": 41001.65,
+    "counterparty": "Rana Electricals",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0119",
+    "reference": "INV-88119",
+    "date": "2026-08-20",
+    "amount": 14456.42,
+    "counterparty": "Aster Wellness",
+    "breakType": "clean",
+    "breakDetail": {}
+  },
+  {
+    "id": "GT-0120",
+    "reference": "INV-88120",
+    "date": "2026-08-17",
+    "amount": 11407.05,
+    "counterparty": "Orbit Analytics",
+    "breakType": "missing",
+    "breakDetail": {
+      "droppedFrom": [
+        "bank"
+      ]
+    }
+  }
+]
